@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senhas Futurista</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Gerador Futurista de Senhas</h1>
+    <div class="senha-box">
+      <input type="text" id="senha" readonly>
+      <button id="copiar">Copiar</button>
+    </div>
+    <div class="opcoes">
+      <label><input type="checkbox" id="maiusculas" checked> Maiúsculas</label>
+      <label><input type="checkbox" id="minusculas" checked> Minúsculas</label>
+      <label><input type="checkbox" id="numeros" checked> Números</label>
+      <label><input type="checkbox" id="simbolos" checked> Símbolos</label>
+      <label>Tamanho: <input type="number" id="tamanho" min="4" max="30" value="12"></label>
+    </div>
+    <button id="gerar">🔄 Gerar Senha</button>
+    <p id="feedback"></p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
